@@ -42,9 +42,11 @@ class App extends React.Component {
 	openMenu() {
 		this.setState({ menuIsOpened: true });
 	}
+
 	synchMenu(e) {
 		this.setState({ menuIsOpened: e.isOpen });
 	}
+	
 	render() {
 		let fecha = moment().format('LT');
 		return (
